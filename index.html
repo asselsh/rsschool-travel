@@ -8,36 +8,49 @@
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,700;1,700&family=Red+Hat+Text:wght@500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,400;1,700&family=Red+Hat+Text:wght@500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+        <title>Travel</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 </head>
 <body>
     <header>
-        <nav class=topnav>
-            <div class="logo">
-                <!-- Logo Placeholder for Illustration -->
-                <img src="/assets/logo.svg" alt="logo"></a>
+        <div class="header">
+            <div class="header_content container">
+                <div class="logo">
+                <a href="#">
+                    <img src="/assets/logo.svg" alt="logo">
+                </a>
             </div>
-            <!-- Navbar Links -->
-            <a href="#preview">How It Works</a>
-            <a href="#steps">Plan Your Trip</a>
-            <a href="#destinations">Destinations</a>
-            <a href="#stories">Travel Stories</a>
-            <button>Login</button>
-        </nav>
-        <section class="preview">
-            <h1>Explore the beauty of the World</h1>
-            <p class="paragraph">Receive personalized recommendations for countries, hotels, activities and more</p>
-            <button>Start Planning</button>
-        </section>
-    </header>
+            <nav class="nav">
+                <a href="#preview">How It Works</a>
+                <a href="#steps">Plan Your Trip</a>
+                <a href="#destinations">Destinations</a>
+                <a href="#stories">Travel Stories</a>
+            </nav>
+            <div>
+                <button class="nav_button">Login</button>
+            </div>
+            </div>
+        </div>
+    </header>    
     <main>
-        
-        <section class="steps">
+        <section class="preview" id="preview">
+            <div class="container">
+                <h1>Explore the beauty of the World</h1>
+                <p>Receive personalized recommendations for countries, hotels, activities and more</p>
+                <div class="preview_input">
+                    <input type="text" class="enter" placeholder="What would you like to do?">
+                    <button class="preview_button">Start Planning</button>
+                </div>
+            </div>
+        </section>
+        <section class="steps container" id="steps">
             <h2>3 STEPS TO THE PERFECT TRIP</h2>
-            <div class="step">
+            <div class="three_steps container">
+                <div class="step">
                 <img src="assets/icon1.svg" alt="icon1" width="100" height="100">
                 <p>Tell us what you want to do</p>
             </div>
@@ -49,29 +62,95 @@
                 <img src="assets/icon3.svg" alt="icon3" width="100" height="100">
                 <p>We will give you recommendations</p>
             </div>
-        </section>
-        <section class="destinations">
-            <h2>POPULAR DESTINATIONS</h2>
-            <button><img src="assets/arrow.svg" alt="arrow" width="40" height="40">Find More</button>
-        </section>
-        <section class="stories">
-            <h2>TRAVEL STORIES</h2>
-            <div>
-                <img src="assets/picture1.svg" alt="picture1">
-                <p>10 Photos of Attractive Thailand</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... Read More</p>
             </div>
-            
-            <button><img src="assets/arrow.svg" alt="arrow" width="40" height="40">See More</button>
+        </section>
+        <section class="destinations" id="destinations">
+            <h2>POPULAR DESTINATIONS</h2>
+            <div class="slider-container">
+                <div class="slider-wrapper">
+                    <div class="slider">
+                        <div class="mySlides">
+                            <img class="slideshow_image" id="slide-1" src="assets/destination3.jpg" alt="destination3" width="800" height="800">
+                            <div class="text">SPAIN</div>
+                        </div>
+                        <div class="mySlides">
+                            <img class="slideshow_image" id="slide-2" src="assets/destination1.jpg" alt="destination1" width="800" height="800">
+                            <div class="text">USA</div>
+                        </div>
+                        <div class="mySlides">
+                            <img class="slideshow_image" id="slide-3" src="assets/destination2.jpg" alt="destination2" width="800" height="800">
+                            <div class="text">JAPAN</div>
+                        </div>
+                    </div>
+                    <div class="slider-nav">
+                        <a class="dot" href="#slide-1"></a>
+                        <a class="dot" href="#slide-2"></a>
+                        <a class="dot" href="#slide-3"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="center_button">
+                 <button class="destinations_button"><img src="assets/arrow.svg" alt="arrow" width="40" height="40">Find More</button>
+            </div>
+        </section>
+        <section class="stories" id="stories">
+            <h2>TRAVEL STORIES</h2>
+            <div class="travel_stories">
+                <div class="travel_stories_layer">
+                    <div class="story container">
+                    <div class="country">   
+                        <div class="country_image">
+                            <img class="country_image" src="assets/picture1.jpg" alt="picture1">
+                        </div>    
+                        <div class="country_text">
+                            <p>10 Photos of Attractive Thailand</p>
+                            <span class="main_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... <br><span class="read_more">Read More</span></span>
+                        </div>
+                    </div>
+                    <div class="country">  
+                        <div class="country_image">
+                            <img class="country_image" src="assets/picture2.jpg" alt="picture2">
+                        </div>   
+                        <div class="country_text">
+                            <p>Canyonlands National Park, Utah</p>
+                            <span class="main_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... <br><span class="read_more">Read More</span></span>
+                        </div>
+                    </div>
+                    <div class="country">   
+                        <div class="country_image">
+                            <img class="country_image" src="assets/picture3.jpg" alt="picture3">
+                        </div>    
+                        <div class="country_text">
+                            <p>I left my heart in the Mountains!</p>
+                            <span class="main_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... <br><span class="read_more">Read More</span></span>
+                        </div>
+                    </div>
+                    <div class="country">   
+                        <div class="country_image">
+                            <img class="country_image" src="assets/picture4.jpg" alt="picture4">
+                        </div>    
+                        <div class="country_text">
+                            <p>The Longest journey in my life!</p>
+                            <span class="main_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... <br><span class="read_more">Read More</span></span>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            <div class="center_button">
+                <button class="story_button"><img src="assets/arrow.svg" alt="arrow" width="40" height="40">See More</button>
+            </div>     
+            </div>  
         </section>
     </main>
     <footer>
-        <p>All Rights Reserved © Travel Portal</p>
+        <div class="footer container">
+           <p>All Rights Reserved © Travel Portal</p>
         <ul>
-            <li><a></a></li>
-            <li><a></a></li>
-            <li><a></a></li>
-        </ul>
+            <li><a href="https://rs.school/js-stage0/"><img src="assets/instagram.svg" width="34" height="34" alt="Instagram"></a></li>
+            <li><a href="https://rs.school/js-stage0/"><img src="assets/youtube.svg" width="34" height="34" alt="Youtube"></a></li>
+            <li><a href="https://rs.school/js-stage0/"><img src="assets/twitter.svg" width="34" height="34" alt="Twitter"></a></li>
+        </ul> 
+        </div>
     </footer>
 </body>
 </html>
